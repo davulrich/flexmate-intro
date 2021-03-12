@@ -3,18 +3,13 @@
 //
 // container style and background
 .intro {
-  height: 100vh;
-
-  &__content {
-    width: 100%;
-    height: 80%;
-    padding-bottom: 10vh;
-    background: url("../img/yellow-audi1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-  }
+  height: 95vh;
+  padding-bottom: 10vh;
+  background: url("../img/yellow-audi1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   // Adjust SEE MORE button
   &__btn {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
