@@ -244,6 +244,15 @@
         }px`;
         console.log(window.innerHeight);
       });
+
+      window.addEventListener("resize", () => {
+        document.querySelector(".intro__btn").textContent =
+          window.innerHeight * 0.95;
+        document.querySelector(".intro").style.height = `${
+          window.innerHeight * 0.95
+        }px`;
+        console.log(window.innerHeight);
+      });
     </script>
   </body>
 </html>
