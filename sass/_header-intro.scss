@@ -3,14 +3,18 @@
 //
 // container style and background
 .intro {
-  height: 95vh;
-  padding-bottom: 10vh;
-  background: url("../img/yellow-audi1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+  height: 100vh;
 
+  &__content {
+    width: 100%;
+    height: 95%;
+    padding-bottom: 10vh;
+    background: url("../img/yellow-audi1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
   // Adjust SEE MORE button
   &__btn {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
@@ -22,21 +26,21 @@
 
   // Button with arrow in middle to scroll down
   &__btn-arrow {
-    height: 7vh;
-    width: 7vh;
+    height: 3.5rem;
+    width: 3.5rem;
     background: $secondary;
     border: none;
     border-radius: 50px;
     position: absolute;
     left: 50%;
-    bottom: 0.7vh;
+    bottom: -2.1rem;
     transform: translate(-50%, -0.5vh);
     transition: all 0.15s ease-in-out;
 
     &:hover {
-      width: 8vh;
-      height: 8vh;
-      bottom: 0.1vh;
+      width: 4rem;
+      height: 4rem;
+      bottom: -2.5rem;
 
       svg {
         transform: scale(1.2);
@@ -45,7 +49,7 @@
 
     svg {
       transition: all 0.15s ease-in-out;
-      width: 3vh;
+      width: 1.5rem;
     }
   }
 }

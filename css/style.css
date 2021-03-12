@@ -6814,7 +6814,11 @@ a:hover {
 }
 
 .intro {
-  height: 95vh;
+  height: 100vh;
+}
+.intro__content {
+  width: 100%;
+  height: 95%;
   padding-bottom: 10vh;
   background: url("../img/yellow-audi1.jpg");
   background-position: center;
@@ -6832,28 +6836,28 @@ a:hover {
   }
 }
 .intro__btn-arrow {
-  height: 7vh;
-  width: 7vh;
+  height: 3.5rem;
+  width: 3.5rem;
   background: #f7f7f7;
   border: none;
   border-radius: 50px;
   position: absolute;
   left: 50%;
-  bottom: 0.7vh;
+  bottom: -2.1rem;
   transform: translate(-50%, -0.5vh);
   transition: all 0.15s ease-in-out;
 }
 .intro__btn-arrow:hover {
-  width: 8vh;
-  height: 8vh;
-  bottom: 0.1vh;
+  width: 4rem;
+  height: 4rem;
+  bottom: -2.5rem;
 }
 .intro__btn-arrow:hover svg {
   transform: scale(1.2);
 }
 .intro__btn-arrow svg {
   transition: all 0.15s ease-in-out;
-  width: 3vh;
+  width: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
