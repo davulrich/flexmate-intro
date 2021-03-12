@@ -6685,6 +6685,7 @@ a:hover {
 .btn {
   text-transform: uppercase;
   padding: 1rem 3rem;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 992px) {
