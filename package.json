@@ -8,10 +8,14 @@
     "start": "npm-run-all --parallel devserver watch:sass",
     "watch:sass": "sass sass/main.scss css/style.css --watch",
     "devserver": "live-server",
-    "compile:sass": "sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compile:sass": "sass sass/main.scss css/style.css --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -r",
     "compress:css": "sass css/style.prefix.css css/style.css --style=compressed --no-source-map"
   },
+  "browserslist": [
+    "> 1%",
+    "last 4 versions"
+  ],
   "author": "David Ulrich",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
