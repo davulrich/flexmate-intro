@@ -10,35 +10,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav
+      class="navbar fixed-top navbar-dark justify-content-sm-center py-sm-2 px-sm-4"
+    >
+      <a class="navbar-brand" href="#">Lorem ipsum</a>
+      <div class="navbar-btn-wraper">
+        <button
+          class="navbar-toggler"
+          type="button"
+          d
+          data-toggle="collapse"
+          data-target="#main-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav mr-auto align-items-sm-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header
       class="intro d-flex align-items-center justify-content-center align-items-sm-end justify-content-sm-start p-4"
     >
-      <nav class="navbar navbar-dark justify-content-sm-center py-sm-2 px-sm-4">
-        <a class="navbar-brand" href="#">Lorem ipsum</a>
-        <div class="navbar-btn-wraper">
-          <button
-            class="navbar-toggler"
-            type="button"
-            d
-            data-toggle="collapse"
-            data-target="#main-nav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav mr-auto align-items-sm-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       <a href="#intro-text" class="intro__btn btn btn-primary px-5 py-4">
         See more
       </a>
@@ -236,12 +237,12 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
+      /*  document.addEventListener("DOMContentLoaded", () => {
         root. = `${
           window.innerHeight * 0.95
         }px`;
         console.log(window.innerHeight);
-      });
+      }); */
 
       /* window.addEventListener("resize", () => {
         document.querySelector(".intro__btn").textContent =
