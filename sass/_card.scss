@@ -1,0 +1,58 @@
+////////////////////
+// Card container - set max width
+//
+.cards {
+  @include media-breakpoint-up(lg) {
+    max-width: 900px;
+  }
+}
+
+////////////////////
+// Card component
+//
+.card {
+  color: $primary;
+  border-radius: 0;
+  border: none;
+  border-top: 3px solid $primary;
+  border-bottom: 1px solid $primary;
+
+  &:hover .card-img-top {
+    transform: scale(1.1);
+  }
+}
+
+.card-img-wraper {
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 12rem;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+// Used for card with btn
+.card-with-btn {
+  min-height: 20rem;
+  border-top: 5px solid $primary;
+
+  .card-body {
+    @include media-breakpoint-up(lg) {
+      padding: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+// Use for card with btn and img
+.card-with-btn-img {
+  border-top: 5px solid $primary;
+
+  img {
+    max-height: 17rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+
+  ////////////////////
+  // Responsive font-size
+  //
+  font-size: 88%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 100%;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}

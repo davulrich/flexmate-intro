@@ -1,0 +1,86 @@
+////////////////////
+// Navbar
+//
+.navbar {
+  backdrop-filter: blur(5px);
+  @include media-breakpoint-up(sm) {
+    &::before {
+      content: "";
+      flex: 1;
+    }
+  }
+}
+.navbar-dark {
+  background: rgba($primary, 0.8);
+}
+
+////////////////////
+// Navbar button
+//
+// Wrapper to align button to the right
+.navbar-btn-wraper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+// Hamburger menu button
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  height: $dropdown-btn-height;
+  font-size: 0;
+  line-height: inherit;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    width: 2rem;
+    height: 1px;
+    background-color: $secondary;
+    display: inline-block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: calc(#{$dropdown-btn-height} / -2);
+  }
+  &::after {
+    top: calc(#{$dropdown-btn-height} / 2);
+  }
+}
+
+.navbar-toggler[aria-expanded="true"] > .navbar-toggler-icon {
+  background: transparent;
+
+  &::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+////////////////////
+// Navbar brand
+//
+.navbar-brand {
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+  }
+}

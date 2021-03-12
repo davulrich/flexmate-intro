@@ -1,0 +1,27 @@
+{
+  "name": "flexmate-intro",
+  "version": "1.0.0",
+  "description": "Flexmate interview challenge",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "watch:sass": "sass sass/main.scss css/style.css --watch",
+    "devserver": "live-server",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style=compressed --no-source-map"
+  },
+  "author": "David Ulrich",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  }
+}

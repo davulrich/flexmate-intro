@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex mate interview</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header
+      class="intro d-flex align-items-center justify-content-center align-items-sm-end justify-content-sm-start p-4"
+    >
+      <nav
+        class="navbar fixed-top navbar-dark justify-content-sm-center py-sm-2 px-sm-4"
+      >
+        <a class="navbar-brand" href="#">Lorem ipsum</a>
+        <div class="navbar-btn-wraper">
+          <button
+            class="navbar-toggler"
+            type="button"
+            d
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav mr-auto align-items-sm-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <a href="#intro-text" class="intro__btn btn btn-primary px-5 py-4">
+        See more
+      </a>
+
+      <a
+        href="#intro-text"
+        class="intro__btn-arrow d-flex align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="47.403"
+          height="28.382"
+          viewBox="0 0 47.403 28.382"
+        >
+          <path
+            id="next-page-arrow"
+            d="M1026.937,465.671l24.019,21.583-24.019,21.583"
+            transform="translate(510.956 -1024.818) rotate(90)"
+            fill="none"
+            stroke="#255e8d"
+            stroke-linecap="round"
+            stroke-width="3"
+          />
+        </svg>
+      </a>
+    </header>
+
+    <main class="container">
+      <section id="intro-text" class="row justify-content-center">
+        <div class="jumbotron d-flex flex-column align-items-center pb-0">
+          <h3 class="text-center mb-5 font-weight-normal">Lorem ipsum</h3>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam
+            dictum tincidunt diam. Duis sapien nunc, commodo et, interdum
+            suscipit, sollicitudin et, dolor. In convallis. Sed ac dolor sit
+            amet purus malesuada congue. Morbi scelerisque luctus velit. Duis
+            condimentum augue id magna semper rutrum. Suspendisse sagittis
+            ultrices augue. Aenean placerat. Nullam sapien sem, ornare ac,
+            nonummy non, lobortis a enim. Aliquam id dolor. Nulla accumsan, elit
+            sit amet varius semper, nulla mauris mollis quam, tempor suscipit
+            diam nulla vel leo. Mauris dictum facilisis augue. Donec vitae arcu.
+            Mauris metus. Nunc tincidunt ante vitae massa. Nullam lectus justo,
+            vulputate eget mollis sed, tempor sed magna.
+          </p>
+          <hr class="my-4 w-75" />
+          <p class="text-center w-50">
+            Mauris dictum facilisis augue. Donec vitae arcu. Mauris metus.
+          </p>
+        </div>
+      </section>
+
+      <section id="cards-img" class="row">
+        <div class="col-sm-6 col-md-4 mx-5 mb-5 mx-sm-0">
+          <div class="card">
+            <div class="card-img-wraper">
+              <img
+                src="./img/mercedes-detail.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center mb-2">
+                <a href="#intro-text" class="stretched-link">Duis sapien</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-5 mb-5 mx-sm-0">
+          <div class="card">
+            <div class="card-img-wraper">
+              <img src="./img/car1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center mb-2">
+                <a href="#intro-text" class="stretched-link">Duis sapien</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-5 mb-5 mx-sm-0">
+          <div class="card">
+            <div class="card-img-wraper">
+              <img src="./img/car2.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center mb-2">
+                <a href="#intro-text" class="stretched-link">Duis sapien</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <secion id="cards-buttons" class="row py-5">
+        <div class="container cards">
+          <div class="row pb-5">
+            <div class="col-md-6 mx-5 mb-5 mx-md-0 pb-5 pb-md-0">
+              <div class="card card-with-btn">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h4 class="card-title text-center mb-3 font-weight-normal">
+                    Lorem ipsum
+                  </h4>
+                  <hr class="my-4 w-100" />
+                  <p class="card-text text-center mb-2 px-4">
+                    Nullam lectus justo, vulputate eget mollis sed, tempor sed
+                    magna.
+                  </p>
+                  <a type="button" class="btn btn-primary mt-auto">
+                    See more
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mx-5 mb-5 mx-md-0">
+              <div class="card card-with-btn">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h4 class="card-title text-center mb-3 font-weight-normal">
+                    Lorem ipsum
+                  </h4>
+                  <hr class="my-4 w-100" />
+                  <p class="card-text text-center mb-2 px-4">
+                    Nullam lectus justo, vulputate eget mollis sed, tempor sed
+                    magna. In convallis. Sed ac dolor sit amet purus malesuada
+                    congue.
+                  </p>
+                  <a type="button" class="btn btn-primary mt-auto">
+                    See more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pb-5">
+            <div class="col-md-12 mx-5 mb-5 mx-md-0">
+              <div class="card card-with-btn-img">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column align-items-start h-100 p-4"
+                    >
+                      <h4 class="card-title mb-3 font-weight-normal">
+                        Lorem ipsum
+                      </h4>
+                      <p class="card-text mb-3 mt-auto">
+                        Nullam lectus justo, vulputate eget mollis sed, tempor
+                        sed magna.
+                      </p>
+                      <a type="button" class="btn btn-primary mt-2">
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./img/old-cars.jpg" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mx-5 mb-5 mx-md-0">
+              <div class="card card-with-btn-img">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column align-items-start h-100 p-4"
+                    >
+                      <h4 class="card-title mb-3 font-weight-normal">
+                        Lorem ipsum
+                      </h4>
+                      <p class="card-text mb-3 mt-auto">
+                        Nullam lectus justo, vulputate eget mollis sed, tempor
+                        sed magna.
+                      </p>
+                      <a type="button" class="btn btn-primary mt-2">
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./img/home-car.jpg" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secion>
+    </main>
+
+    <!-- Scripts -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
