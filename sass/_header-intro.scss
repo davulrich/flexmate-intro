@@ -7,7 +7,7 @@
 
   &__content {
     width: 100%;
-    height: 95%;
+    height: 80%;
     padding-bottom: 10vh;
     background: url("../img/yellow-audi1.jpg");
     background-position: center;
@@ -18,7 +18,6 @@
   // Adjust SEE MORE button
   &__btn {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
-    margin-top: 35vh;
     @include media-breakpoint-up(sm) {
       margin-top: 0;
     }
