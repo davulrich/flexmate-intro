@@ -13,9 +13,7 @@
     <header
       class="intro d-flex align-items-center justify-content-center align-items-sm-end justify-content-sm-start p-4"
     >
-      <nav
-        class="navbar fixed-top navbar-dark justify-content-sm-center py-sm-2 px-sm-4"
-      >
+      <nav class="navbar navbar-dark justify-content-sm-center py-sm-2 px-sm-4">
         <a class="navbar-brand" href="#">Lorem ipsum</a>
         <div class="navbar-btn-wraper">
           <button
@@ -239,20 +237,20 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector(".intro").style.height = `${
+        root. = `${
           window.innerHeight * 0.95
         }px`;
         console.log(window.innerHeight);
       });
 
-      window.addEventListener("resize", () => {
+      /* window.addEventListener("resize", () => {
         document.querySelector(".intro__btn").textContent =
           window.innerHeight * 0.95;
         document.querySelector(".intro").style.height = `${
           window.innerHeight * 0.95
         }px`;
         console.log(window.innerHeight);
-      });
+      }); */
     </script>
   </body>
 </html>
