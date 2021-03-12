@@ -6712,7 +6712,7 @@ a:hover {
   height: 12rem;
   object-fit: cover;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-with-btn {
@@ -6795,18 +6795,6 @@ a:hover {
   top: calc(1.2rem / 2);
 }
 
-.navbar-toggler[aria-expanded=true] > .navbar-toggler-icon {
-  background: transparent;
-}
-.navbar-toggler[aria-expanded=true] > .navbar-toggler-icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-.navbar-toggler[aria-expanded=true] > .navbar-toggler-icon::after {
-  top: 0;
-  transform: rotate(-135deg);
-}
-
 @media (min-width: 576px) {
   .navbar-brand {
     font-size: 1.5rem;
@@ -6815,7 +6803,6 @@ a:hover {
 
 .intro {
   height: 95vh;
-  padding-bottom: 10vh;
   background: url("../img/yellow-audi1.jpg");
   background-position: center;
   background-size: cover;
