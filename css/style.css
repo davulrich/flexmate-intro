@@ -6820,6 +6820,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .intro__btn {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
