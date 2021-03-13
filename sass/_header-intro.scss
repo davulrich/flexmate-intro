@@ -27,17 +27,15 @@
     border-radius: 50px;
     position: absolute;
     left: 50%;
-    bottom: -2.1rem;
-    transform: translate(-50%, -0.5vh);
+    bottom: -3.6rem;
+    transform: translate(-50%, -50%);
     transition: all 0.15s ease-in-out;
 
     &:hover {
-      width: 4rem;
-      height: 4rem;
-      bottom: -2.5rem;
+      height: 3.7rem;
 
       svg {
-        transform: scale(1.2);
+        transform: scaleY(-0.2rem);
       }
     }
 
