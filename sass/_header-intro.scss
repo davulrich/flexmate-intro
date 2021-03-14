@@ -4,11 +4,25 @@
 // container style and background
 .intro {
   height: 95vh;
-  background: url("../img/yellow-audi1.jpg");
+  background: url("../img/yellow-audi-small.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  @include media-breakpoint-up(sm) {
+    background: url("../img/yellow-audi-medium.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: url("../img/yellow-audi.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   // Adjust SEE MORE button
   &__btn {
